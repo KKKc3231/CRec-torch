@@ -1,5 +1,5 @@
 # CRec-torch🚗
-pytorch从0-1实现推荐算法，ctr / cvr &amp;&amp; seqrec &amp;&amp; genetiverec
+pytorch从0-1实现推荐算法，ctr / cvr &amp;&amp; seqrec &amp;&amp; generative rec
 
 在实习期间，重构的一套pytorch的推荐模型训练流程，包括了常见的ctr / cvr 多任务点击转化预测任务，序列推荐任务（基于用户交互item_id的先后顺序），生成式训练范式实现序列推荐
 
