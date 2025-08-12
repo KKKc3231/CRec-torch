@@ -6,4 +6,4 @@ pytorch从0-1实现推荐算法，ctr / cvr &amp;&amp; seqrec &amp;&amp; generat
 - 规划实现中～
 - 1、ctr / cvr 全流程已实现，多任务架构，特征处理 / 数据加载 / 模型训练 / 推理
 - 2、seqrec：sasrec / hstu decoder-only 已复现
-- 3、generative rec：生成事推荐（偏recall），基本复现，规划中～
+- 3、generative rec：生成式推荐（偏recall），基本复现，规划中～
