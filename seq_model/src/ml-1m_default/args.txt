@@ -1,0 +1,16 @@
+batch_size,128
+dataset,ml-1m
+device,cuda
+dropout_rate,0.2
+hidden_units,50
+inference_only,False
+k,10
+l2_emb,0.1
+lr,0.001
+maxlen,200
+norm_first,False
+num_blocks,2
+num_epochs,1000
+num_heads,2
+state_dict_path,None
+train_dir,default

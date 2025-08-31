@@ -1,0 +1,30 @@
+2025-07-25 11:31:50,566 - __main__ - INFO - Loaded configuration from option/train/train_din.yml
+2025-07-25 11:31:50,566 - scripts.register - INFO - register model: ESMMDIN
+2025-07-25 11:31:50,566 - scripts.register - INFO - module name: ctr_model.esmmdin_arch
+2025-07-25 11:31:50,567 - scripts.register - INFO - model class: <class 'ctr_model.esmmdin_arch.ESMMDIN'>
+2025-07-25 11:31:50,569 - scripts.register - INFO - 加载特征信息成功～
+2025-07-25 11:31:50,580 - scripts.register - INFO - 实例化ESMMDIN模型成功～
+2025-07-25 11:31:50,580 - scripts.register - INFO - 实例化Adam优化器成功～
+2025-07-25 11:31:50,580 - scripts.register - INFO - ctr_loss: 实例化BCEWithLogitsLoss损失函数成功～
+2025-07-25 11:31:50,581 - scripts.register - INFO - ctcvr_loss: 实例化BCEWithLogitsLoss损失函数成功～
+2025-07-25 11:32:22,152 - dataprocess - INFO - 加载train && test dataset成功～
+2025-07-25 11:32:23,161 - dataprocess - INFO - seq_trainset fit ok～
+2025-07-25 11:33:26,903 - dataprocess - INFO - train and test dataset transform ok~
+2025-07-25 11:33:26,918 - dataprocess - INFO - save processor class ok~
+2025-07-25 11:33:27,755 - dataprocess - INFO - 特征信息保存成功～
+2025-07-25 11:33:27,936 - dataprocess - INFO - Data loaders created successfully
+2025-07-25 11:33:28,982 - training - INFO - 开始训练模型～
+2025-07-25 11:33:28,982 - training - INFO - Epoch 1/1
+2025-07-25 11:33:56,749 - training - INFO - Epoch 1, Step 200, ctr_loss: 0.5194792747497559, ctcvr_loss: 0.07084435224533081, total loss: 0.5903236269950867
+2025-07-25 11:34:26,677 - training - INFO - Epoch 1, Step 400, ctr_loss: 0.47463804483413696, ctcvr_loss: 0.07263561338186264, total loss: 0.5472736358642578
+2025-07-25 11:35:07,409 - training - INFO - Epoch 1, Step 600, ctr_loss: 0.47861891984939575, ctcvr_loss: 0.0745709240436554, total loss: 0.5531898736953735
+2025-07-25 11:35:48,287 - training - INFO - Epoch 1, Step 800, ctr_loss: 0.45290735363960266, ctcvr_loss: 0.0662987232208252, total loss: 0.5192060470581055
+2025-07-25 11:36:29,331 - training - INFO - Epoch 1, Step 1000, ctr_loss: 0.43913865089416504, ctcvr_loss: 0.08414295315742493, total loss: 0.5232815742492676
+2025-07-25 11:37:09,879 - training - INFO - Epoch 1, Step 1200, ctr_loss: 0.43740007281303406, ctcvr_loss: 0.06533385813236237, total loss: 0.5027339458465576
+2025-07-25 11:37:50,584 - training - INFO - Epoch 1, Step 1400, ctr_loss: 0.42917054891586304, ctcvr_loss: 0.07516958564519882, total loss: 0.5043401122093201
+2025-07-25 11:38:31,526 - training - INFO - Epoch 1, Step 1600, ctr_loss: 0.4486117362976074, ctcvr_loss: 0.08344433456659317, total loss: 0.5320560932159424
+2025-07-25 11:38:32,855 - training - INFO - Epoch 1 avg loss: 0.5538
+2025-07-25 11:39:24,192 - training - INFO - Validation Loss: 0.4743
+2025-07-25 11:40:51,788 - training - INFO - Validation Loss: 0.4768
+2025-07-25 11:40:53,828 - training - INFO - Epoch 1 ctr_auc_val: 0.8213, cvr_auc_val: 0.8385
+2025-07-25 11:40:53,828 - training - INFO - Epoch 1 ctr_auc_test: 0.8169, cvr_auc_test: 0.8334

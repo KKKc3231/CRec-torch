@@ -1,0 +1,26 @@
+2025-07-25 11:01:14,354 - __main__ - INFO - Loaded configuration from option/train/train_din.yml
+2025-07-25 11:01:14,354 - scripts.register - INFO - register model: ESMMDIN
+2025-07-25 11:01:14,354 - scripts.register - INFO - module name: ctr_model.esmmdin_arch
+2025-07-25 11:01:14,355 - scripts.register - INFO - model class: <class 'ctr_model.esmmdin_arch.ESMMDIN'>
+2025-07-25 11:01:14,357 - scripts.register - INFO - 加载特征信息成功～
+2025-07-25 11:01:14,368 - scripts.register - INFO - 实例化ESMMDIN模型成功～
+2025-07-25 11:01:14,369 - scripts.register - INFO - 实例化Adam优化器成功～
+2025-07-25 11:01:14,369 - scripts.register - INFO - ctr_loss: 实例化BCEWithLogitsLoss损失函数成功～
+2025-07-25 11:01:14,369 - scripts.register - INFO - ctcvr_loss: 实例化BCEWithLogitsLoss损失函数成功～
+2025-07-25 11:01:44,563 - dataprocess - INFO - 加载train && test dataset成功～
+2025-07-25 11:01:45,551 - dataprocess - INFO - seq_trainset fit ok～
+2025-07-25 11:02:48,352 - dataprocess - INFO - train and test dataset transform ok~
+2025-07-25 11:02:48,368 - dataprocess - INFO - save processor class ok~
+2025-07-25 11:02:49,202 - dataprocess - INFO - 特征信息保存成功～
+2025-07-25 11:02:49,372 - dataprocess - INFO - Data loaders created successfully
+2025-07-25 11:02:50,433 - training - INFO - 开始训练模型～
+2025-07-25 11:02:50,433 - training - INFO - Epoch 1/1
+2025-07-25 11:03:31,065 - training - INFO - Epoch 1, Step 200, ctr_loss: 0.5323783755302429, ctcvr_loss: 0.07273577153682709, total loss: 0.6051141619682312
+2025-07-25 11:04:12,684 - training - INFO - Epoch 1, Step 400, ctr_loss: 0.47557902336120605, ctcvr_loss: 0.0734972208738327, total loss: 0.5490762591362
+2025-07-25 11:04:53,655 - training - INFO - Epoch 1, Step 600, ctr_loss: 0.47272056341171265, ctcvr_loss: 0.07454481720924377, total loss: 0.5472654104232788
+2025-07-25 11:05:34,814 - training - INFO - Epoch 1, Step 800, ctr_loss: 0.44359514117240906, ctcvr_loss: 0.0663650631904602, total loss: 0.5099601745605469
+2025-07-25 11:06:16,122 - training - INFO - Epoch 1, Step 1000, ctr_loss: 0.4318894147872925, ctcvr_loss: 0.08018909394741058, total loss: 0.5120785236358643
+2025-07-25 11:06:57,333 - training - INFO - Epoch 1, Step 1200, ctr_loss: 0.43439754843711853, ctcvr_loss: 0.06575138866901398, total loss: 0.5001489520072937
+2025-07-25 11:07:38,088 - training - INFO - Epoch 1, Step 1400, ctr_loss: 0.429205983877182, ctcvr_loss: 0.0757434144616127, total loss: 0.5049493908882141
+2025-07-25 11:08:19,542 - training - INFO - Epoch 1, Step 1600, ctr_loss: 0.4360748529434204, ctcvr_loss: 0.08185592293739319, total loss: 0.5179307460784912
+2025-07-25 11:08:20,810 - training - INFO - Epoch 1 avg loss: 0.5495

@@ -1,0 +1,123 @@
+{
+  "source": {
+    "data_source": {
+      "table_name": "turing_dev.turing_dev_rcar_model_all_sample_v2_di",
+      "train_start_time": "20240727",
+      "train_end_time": "20240727",
+      "eval_start_time": "20240727",
+      "eval_end_time": "20240727"
+    }
+  },
+
+  "output": {
+    "online_env_save_name" : "offline_zhanyunfeng594",
+    "model_name" : "RcarCarTypeModelRecomRank_seq",
+    "rule_name" : "RcarCarTypeModelRecomFeatureProcess_seq"
+
+  },
+
+  "input_columns": {
+    "wide": [
+
+"rcar_i_c_click_times_7d_uv",
+"rcar_i_c_click_times_14d_uv",
+"rcar_i_c_click_times_30d_uv",
+"rcar_i_c_order_times_7d_uv",
+"rcar_i_c_order_times_14d_uv",
+"rcar_i_c_order_times_30d_uv",
+"rcar_i_c_ctr_times_7d_uv",
+"rcar_i_c_ctr_times_14d_uv",
+"rcar_i_c_ctr_times_30d_uv",
+"rcar_i_c_cvr_times_7d_uv",
+"rcar_i_c_cvr_times_14d_uv",
+"rcar_i_c_cvr_times_30d_uv",
+"rcar_i_c_cr_times_7d_uv",
+"rcar_i_c_cr_times_14d_uv",
+"rcar_i_c_cr_times_30d_uv"
+
+    ],
+
+    "deep": [
+"rcar_i_c_click_times_7d_uv",
+"rcar_i_c_click_times_14d_uv",
+"rcar_i_c_click_times_30d_uv",
+"rcar_i_c_order_times_7d_uv",
+"rcar_i_c_order_times_14d_uv",
+"rcar_i_c_order_times_30d_uv",
+"rcar_i_c_ctr_times_7d_uv",
+"rcar_i_c_ctr_times_14d_uv",
+"rcar_i_c_ctr_times_30d_uv",
+"rcar_i_c_cvr_times_7d_uv",
+"rcar_i_c_cvr_times_14d_uv",
+"rcar_i_c_cvr_times_30d_uv",
+"rcar_i_c_cr_times_7d_uv",
+"rcar_i_c_cr_times_14d_uv",
+"rcar_i_c_cr_times_30d_uv",
+
+"vehiclemark_tag",
+"location_type",
+"location",
+
+"city_code",
+"pickup_city_code",
+
+"item_id",
+"ave_price",
+"rcar_i_goods_car_level",
+"rcar_i_goods_car_name",
+
+"rcar_u_usr_pub_sex",
+"rcar_u_usr_pub_age",
+"rcar_u_usr_pub_is_stu_user",
+"rcar_u_usr_pub_consume_level",
+"rcar_u_usr_age_level",
+"rcar_u_usr_age_sub_level",
+
+"rcar_i_c_click_times_7d_uv_rank",
+"rcar_i_c_click_times_14d_uv_rank",
+"rcar_i_c_click_times_30d_uv_rank",
+"rcar_i_c_order_times_7d_uv_rank",
+"rcar_i_c_order_times_14d_uv_rank",
+"rcar_i_c_order_times_30d_uv_rank",
+"rcar_i_c_ctr_7d_uv_rank",
+"rcar_i_c_ctr_14d_uv_rank",
+"rcar_i_c_ctr_30d_uv_rank",
+"rcar_i_c_cvr_7d_uv_rank",
+"rcar_i_c_cvr_14d_uv_rank",
+"rcar_i_c_cvr_30d_uv_rank",
+"rcar_i_c_cr_7d_uv_rank",
+"rcar_i_c_cr_14d_uv_rank",
+"rcar_i_c_cr_30d_uv_rank",
+
+"rcar_ui_click_cnt_1d_rank",
+"rcar_ui_click_cnt_7d_rank",
+"rcar_ui_click_cnt_14d_rank",
+"rcar_ui_click_cnt_30d_rank",
+"rcar_ui_ctr_1d_rank",
+"rcar_ui_ctr_7d_rank",
+"rcar_ui_ctr_14d_rank",
+"rcar_ui_ctr_30d_rank"
+    ],
+
+    "click20_seq": [
+"click20_seq_item_id",
+"click20_seq_ave_price",
+"click20_seq_rcar_i_goods_car_level",
+"click20_seq_rcar_i_goods_car_name"
+    ],
+
+    "click20_seq_len": [
+"rcar_u_click20_seqence_len"
+    ],
+
+
+    "label": [
+      "click_label",
+      "order_label"
+    ]
+
+
+  }
+}
+
+

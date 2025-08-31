@@ -1,0 +1,18 @@
+2025-07-25 10:38:35,163 - __main__ - INFO - Loaded configuration from option/train/train_esmm.yml
+2025-07-25 10:38:35,163 - scripts.register - INFO - register model: ESMM
+2025-07-25 10:38:35,164 - scripts.register - INFO - module name: ctr_model.esmm_arch
+2025-07-25 10:38:35,165 - scripts.register - INFO - model class: <class 'ctr_model.esmm_arch.ESMM'>
+2025-07-25 10:38:35,167 - scripts.register - INFO - 加载特征信息成功～
+2025-07-25 10:38:35,168 - scripts.register - INFO - embedding_dim: 6, mlp_dim: 16, task_dim: 256
+2025-07-25 10:38:35,192 - scripts.register - INFO - 实例化ESMM模型成功～
+2025-07-25 10:38:35,193 - scripts.register - INFO - 实例化Adam优化器成功～
+2025-07-25 10:38:35,193 - scripts.register - INFO - ctr_loss: 实例化BCEWithLogitsLoss损失函数成功～
+2025-07-25 10:38:35,193 - scripts.register - INFO - ctcvr_loss: 实例化BCEWithLogitsLoss损失函数成功～
+2025-07-25 10:39:10,542 - dataprocess - INFO - 加载train && test dataset成功～
+2025-07-25 10:39:12,100 - dataprocess - INFO - trainset fit ok～
+2025-07-25 10:39:48,513 - dataprocess - INFO - train and test dataset transform ok~
+2025-07-25 10:39:48,531 - dataprocess - INFO - save processor class ok~
+2025-07-25 10:39:49,503 - dataprocess - INFO - 特征信息保存成功～
+2025-07-25 10:39:49,681 - dataprocess - INFO - Data loaders created successfully
+2025-07-25 10:39:53,104 - training - INFO - 开始训练模型～
+2025-07-25 10:39:53,104 - training - INFO - Epoch 1/1

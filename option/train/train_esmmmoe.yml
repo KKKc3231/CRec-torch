@@ -1,0 +1,57 @@
+name: train_esmmmoe_demo
+
+# network 
+network:
+  type: ESMMMOE
+  embedding_dim: 6
+  mlp_dim: 16
+  task_dim: 64
+  num_experts: 2
+  experts_dim: 32
+
+# data process
+dataprocess:
+  save_pkl_path: /data/cc/GR_recommand/CRec_torch/upload_file/preprocessor.pkl
+  features_conf_path: /data/cc/GR_recommand/CRec_torch/upload_file/features_conf.json
+
+# pd data
+data:
+  train_path: /data/cc/GR_recommand/rent_car/data/708_711_train.csv
+  test_path: /data/cc/GR_recommand/rent_car/data/712_test.csv
+  batch_size: 1024
+  num_workers: 4
+  val_size: 0.2
+  seed: 8984
+
+# num_features name 
+num_features: ['rcar_i_c_ctr_7d_uv', 'rcar_i_c_ctr_14d_uv', 'rcar_i_c_ctr_30d_uv', 
+                'rcar_i_c_cvr_7d_uv', 'rcar_i_c_cvr_14d_uv', 'rcar_i_c_cvr_30d_uv',
+                'rcar_i_c_cr_7d_uv', 'rcar_i_c_cr_14d_uv', 'rcar_i_c_cr_30d_uv',
+                'rcar_i_c_cr_7d_uv', 'rcar_i_c_cr_14d_uv', 'rcar_i_c_cr_30d_uv',
+                'rcar_i_c_click_times_7d_uv', 'rcar_i_c_click_times_14d_uv','rcar_i_c_click_times_30d_uv', 
+                'rcar_i_c_order_times_7d_uv', 'rcar_i_c_order_times_14d_uv', 'rcar_i_c_order_times_30d_uv'   
+               ]
+
+# cat_features name
+cat_features: ['location_type', 'vehiclemark_tag', 'location_type', 'location', 'city_code', 'pickup_city_code', 'rcar_i_goods_car_level',
+                'rcar_i_goods_car_name', 'item_id', 'rcar_u_usr_pub_sex', 'rcar_u_usr_pub_age', 'rcar_u_usr_pub_is_stu_user', 
+                'rcar_u_usr_pub_consume_level', 'rcar_u_usr_age_level', 'rcar_u_usr_age_sub_level'
+               ]
+               
+optimizer:
+  type: Adam
+  lr: 0.003
+  weight_decay: 1e-5
+
+trainer:
+  epochs: 1
+  device: cuda
+  log_interval: 100
+  save_dir: /data/cc/GR_recommand/CRec_torch/experiments/esmmmoe
+
+loss:
+  ctr_loss: BCEWithLogitsLoss
+  ctcvr_loss: BCEWithLogitsLoss
+
+logger:
+  name: esmmmoe
